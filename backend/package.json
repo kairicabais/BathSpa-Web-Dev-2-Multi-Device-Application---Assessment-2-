@@ -1,0 +1,23 @@
+{
+  "name": "multi-device-application---assessment-2",
+  "version": "1.0.0",
+  "description": "connect mongodb with express",
+  "license": "ISC",
+  "author": "kairi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "moment": "^2.30.1",
+    "mongoose": "^8.9.5",
+    "qs": "^6.14.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
