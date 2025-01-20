@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>The Chat App</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">The Chat App</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+            </li>
+    
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1><i class="fas fa-smile"></i> The Chat App</h1>
+      <a href="index.html" class="btn">Leave Room</a>
+    </header>
+
+
+
+
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room-name">Group Chats</h2>
+
+        <!-- users to chat with  -->
+        <h3><i class="fas fa-users"></i> Users</h3> 
+        <ul id="users">
+          <li>Kairi</li>
+          <li>Angelina</li>
+          <li>Liz</li>
+          <li>Kaola</li>
+          <li>R'bonney</li>
+        </ul>
+      </div>
+      <div class="chat-messages">
+					<div class="message">
+						<p class="meta">Liz <span>9:12pm</span></p>
+						<p class="text">
+							Where should we hang?
+						</p>
+					</div>
+					<div class="message">
+						<p class="meta">Kairi <span>9:15pm</span></p>
+						<p class="text">
+							Kunafeh Ice Cream!!
+						</p>
+					</div>
+                    <div class="message">
+						<p class="meta">Kaola <span>9:15pm</span></p>
+						<p class="text">
+							I found the hi-tec c4s..
+						</p>
+					</div>
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+  </div>
+  
+  <script scr="/socket.io/socket.io.js"
+  <script src="main.js"></script>
+</body>
+</html>
